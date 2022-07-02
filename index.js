@@ -23,7 +23,7 @@ app.get('/crawler', (req, res) => {
         return imgLinks;
     });
     await res.json(imgLinks)
-    await browser.close();
+    await browser.close()
     })();
 })
 
