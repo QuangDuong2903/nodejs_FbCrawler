@@ -11,10 +11,10 @@ app.get('/', (req, res) => {
 
 app.get('/crawler', (req, res) => {
     (async () => {
-    const browser = await puppeteer.launch({ headless: true});
+    const browser = await puppeteer.launch({ headless: false});
     const page = await browser.newPage();
     await page.goto(req.query.url, {
-        waitUntil: 'networkidle0',
+        waitUntil: 'networkidle2',
       });
     const imgLinks = await page.evaluate(() => {
         let imgElements = document.querySelectorAll('.dlv3wnog.enqfppq2.lhclo0ds.j83agx80 .datstx6m.bixrwtb6.k4urcfbm');
