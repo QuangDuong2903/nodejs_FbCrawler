@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    background-color: black;
+}
+
+.main {
+    flex: 2;
+    margin: 40px 0 0 40px;
+}
+
+.logo {
+    flex: 1;
+    
+}
+
+.img-wrapper {
+    width: 80%;
+    height: 60%;
+    margin: 20% auto;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+}
+
+input {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 30%;
+}
+
+button {
+    margin-left: 10px;
+    color: black;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(194, 206, 206);
+}
+p {
+    color: white;
+    padding: 10px 0;
+}
+
+.img-container {
+    margin-top: 20px;
+}
+
