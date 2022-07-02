@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 app.get('/crawler', (req, res) => {
     (async () => {
-    const browser = await puppeteer.launch({ headless: false});
+    const browser = await puppeteer.launch({ headless: true});
     const page = await browser.newPage();
     await page.goto(req.query.url, {
         waitUntil: 'networkidle2',
